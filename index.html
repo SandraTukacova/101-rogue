@@ -6,6 +6,7 @@
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet"> 
+        <link href='//fontsforweb.com/font/getcss?id=31244&apikey=05efa842c1e6c40fe1c4ed551f621a47' rel='stylesheet' type='text/css'>
     </head>
 
     <body>
@@ -19,12 +20,12 @@
                 <div class="half-width">
                     <nav>
                         <ul>
-                            <li>about</li>
-                            <li>menu</li>
-                            <li>locations</li>
-                            <li>gallery</li>
-                            <li>reviews</li>
-                            <li>content</li>
+                            <li><a href="#about">about</a></li>
+                            <li><a href="#menu">menu</a></li>
+                            <li><a href="#locations">locations</a></li>
+                            <li><a href="">gallery</a></li>
+                            <li><a href="#reviews">reviews</a></li>
+                            <li><a href="">content</a></li>
     
                         </ul>
                     </nav>
@@ -36,18 +37,19 @@
         
         <main>
         
-            <div id="image">
+            <div class="full-width">
                 <img src="img/hero.png" alt="Peapods in a box">
+            
+
+                <section id="about">
+                    <h2>Welcome to our little corner of the internet!</h2>
+
+                    <p>Welcome to Rogue Pickings, the roaming truck bringing you the freshest ingredients and ideas in food. Our team works hard so you can be sure our ingredients are always fresh and picked carefully. Our menu changes every day and is made with you in mind. We can't wait to come to you! Check out our locations to see where you can find us.</p>
+                </section>
             </div>
 
-            <section id="about">
-                <h2>Welcome to our little corner of the internet!</h2>
-
-                <p>Welcome to Rogue Pickings, the roaming truck bringing you the freshest ingredients and ideas in food. Our team works hard so you can be sure our ingredients are always fresh and picked carefully. Our menu changes every day and is made with you in mind. We can't wait to come to you! Check out our locations to see where you can find us.</p>
-            </section>
-
-            <section id="bottom">
-                <div class="full-width">
+                <section id="bottom">
+                    <div class="full-width">
                     
                     <div class="third-width" id="menu">
                         <h3>Today's Specials</h3>
@@ -60,7 +62,7 @@
     
                     </div>
     
-                    <div class="third-width" id="review">
+                    <div class="third-width" id="reviews">
                         <h3>Our Awesome Reviews</h3>
     
                         <p>"I got so excited about the  yumminess of the falafel salad that I am typing this review as I inhale my lunch. Yes it is that good.... Service was super friendly and quick. Can't wait see you Rogue Pickings again tomorrow!"</p>
@@ -82,7 +84,7 @@
         </main>
 
         <footer>
-            <p>Powered By Lots of <span id="footnote">fresh</span> Ingredients</p>
+            <p>Powered By Lots of <span>fresh</span> Ingredients</p>
         </footer>
     </body>
 </html>
