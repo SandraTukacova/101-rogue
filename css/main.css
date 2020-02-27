@@ -17,8 +17,12 @@ body{
 }
 
 .third-width{
-    width: 400px;
+    border-top: 1px solid #dedbdc;
+    border-bottom: 1px solid #dedbdc;
     float: left;
+    height: 210px;
+    width: 400px;
+    
 }
 
 /****** HEADER ******/
@@ -93,11 +97,56 @@ img{
     margin-left: 20px;
 }
 
-footer{
-    clear: both;
-    text-align: center;
+.third-width h3{
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 25px;
+    text-transform: uppercase;
 }
 
+.third-width p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21px;
+    padding: 0px 30px;
+}
+
+
+#specials{
+    padding-left: 0;
+}
+
+#specials li{
+    color: #77a466;
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+    padding-bottom: 20px;
+    }
+
+
+#reviews{
+    border-left: 1px solid #dedbdc;
+    border-right: 1px solid #dedbdc;
+}
+
+#reviews h3, #locations h3{
+    padding-left: 30px;
+}
+
+footer{
+    clear: both;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 23px;
+    margin-right: 640px;
+    padding-top: 25px;
+    text-align: center;
+    text-transform: uppercase;
+    
+}
 footer span {
     font-family: Wisdom Script, cursive;
-}
+    font-weight: lighter;
+    text-transform: lowercase;
