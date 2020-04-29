@@ -1,25 +1,26 @@
 html{
-	font-size: 16px;
+	font-size: 16px; /*generic and mobile*/
 }
 
-body {
+body { /*generic and mobile styles*/
 	font-family: 'Montserrat', sans-serif;
-	font-size: 1em;
-	background-color: #f5f5f5;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	font-size: 1em; 
+	background-color: #f5f5f5; 
+	display: flex; 
+	justify-content: center; 
+	align-items: center; 
 }
 
-.container{
+.container{ /*generic and mobile styles*/
 	max-width: 1200px;
+	width: 90%; /*smaller mobile screens*/
 	margin: 0 auto;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	flex-flow: row wrap;
+	flex-flow: wrap; /*wrap the content; row direction is default*/
 }
-
+/*Text Styles*/
 h1,
 h2,
 h3 {
@@ -28,44 +29,48 @@ h3 {
 	font-weight: 700;
 }
 h1 {
-	font-size: 30px;
+	font-size: 1.875em; /*30px/16px*/
 }
 h2 {
-    font-size: 18px;
+    font-size: 1.125em; /*18px/16px*/
 }
-h3 {
-	font-size: 17px;
+h3, p {
+	font-size: 0.875em; /*14px/16px*/
 }
 
 
 p {
-	font-size: 14px;
 	line-height: 21px;
-    padding: 0 30px;
 }
 
-/*The widths are in a percentage!*/
-header {
-	height: 110px;
+/*Header Styles*/
+
+header { /*generic and mobile styles*/
 	border-bottom: 3px solid #77a466;
-	margin: 0 auto;
 	display: flex;
 	justify-content: center;
+	margin: 0 auto;
 	align-items: center;
+	flex-flow: wrap;
+	text-align: center;
+	width: 100%;
 }
 
-header h1 {
-	float: left;
+header h1 { /*generic and mobile styles*/
+	border-bottom: 3px solid #77a466; /*added for mobile*/
 	margin: 0;
-	padding: 38px 0;
+	padding: 38px 20px 20px 20px; /* originally 38px 0*/
+	width: 100%;
 }
 header h1 span {
 	color: #77a466;
 }
 
 header nav {
-	float: right;
-	padding: 46px 0;
+	display: flex;
+	justify-content: center;
+	padding: 20px 0; /*originally 46px 0*/
+	width: 100%;
 }
 header nav ul {
 	margin: 0;
@@ -74,39 +79,33 @@ header nav ul {
 header nav ul li {
 	text-transform: uppercase;
 	font-weight: 700;
-	font-size: 14px;
-	padding: 0 10px;
-	display: inline;
+	font-size: 0.875em; /*14px/16px*/
+	padding: 10px 0; /*originally 0 10px*/
+	list-style: none;
 }
 header nav ul li a{
 	text-decoration: none;
 	color:#77a466;
 }
 
-/*The widths are in a percentage!*/
+/*Top  Section*/
 .top,
 .bottom {
-	margin: 0 auto;
-	clear: both;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	flex-flow: wrap;
 }
 
 .hero {
 	height: auto;
-	float: left;
 }
-
+ 
 img {
 	width: 100%;
 	border-bottom: 3px solid #77a466;
 }
 
-.main-title {
-	height: auto;
-	float: left;
-}
 .main-title h2 {
 	text-align: left;
 	padding: 5px 0;
@@ -115,31 +114,20 @@ img {
 }
 .main-title p {
 	padding: 0;
-	font-size: 16px;
+	font-size: 1em;
 	line-height: 25px;
 }
-
+/*Bottom Section*/
 .one,
 .two,
 .three {
-	width: 33%;
-	height: auto;
-	float: left;
-	border-top: 1px solid #eee;
-}
-
-.one h3 {
-	padding: 10px 0;
+	width: 100%;
+	
 }
 
 .two {
 	border-left: 1px solid #eee;
 	border-right: 1px solid #eee;
-}
-
-.two h3,
-.three h3 {
-	padding: 10px 30px;
 }
 
 #menu {
@@ -153,35 +141,47 @@ img {
 
 #reviews {
 	color: #333;
-	font-size: 16px;
+	font-size: 1em;
 	line-height: 21px;
 }
 
 #locations {
-	font-size: 16px;
+	font-size: 1em;
 	line-height: 24px;
 }
-
-/*The widths are in a percentage!*/
+/*Footer*/
 footer {
+	border-top: 3px solid #eee;
+	text-align: center;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 50px;
-	font-weight: 700;
-	border-top: 3px solid #eee;
-	margin: 0 auto;
-	clear: both;
-	text-align: center;
-	text-transform: uppercase;
+	width: 100%;
 }
 
 footer p{
-	font-size: 16px;
+	font-size: 0.875em; /*14px/16px*/;
+	font-weight: 700;
+	text-transform: uppercase;
 }
 footer span {
 	font-family: Wisdom Script, cursive;
 	text-transform: lowercase;
 	color: #77a466;
-	font-size: 14px;
+	font-size: 0.750em /*12px/14px*/
 }
+/**
+for tablets and desktops (soon to add)
+ .main-title {
+		height: auto;
+		float: left;
+} 
+.one h3 {
+	padding: 10px 0;
+}
+
+.two h3,
+.three h3 {
+	padding: 10px 30px;
+}
+**/
