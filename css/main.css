@@ -122,12 +122,8 @@ img {
 .two,
 .three {
 	width: 100%;
+	border-top: 1px solid #eee;
 	
-}
-
-.two {
-	border-left: 1px solid #eee;
-	border-right: 1px solid #eee;
 }
 
 #menu {
@@ -183,5 +179,10 @@ for tablets and desktops (soon to add)
 .two h3,
 .three h3 {
 	padding: 10px 30px;
+}
+
+.two {
+	border-left: 1px solid #eee;
+	border-right: 1px solid #eee;
 }
 **/
