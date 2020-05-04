@@ -166,23 +166,59 @@ footer span {
 	color: #77a466;
 	font-size: 0.750em /*12px/14px*/
 }
-/**
-for tablets and desktops (soon to add)
- .main-title {
-		height: auto;
-		float: left;
-} 
-.one h3 {
-	padding: 10px 0;
-}
 
-.two h3,
-.three h3 {
-	padding: 10px 30px;
-}
+@media all and (min-width:768px) {
+	/* Tablet styles here */
+	
+	.bottom{
+		align-items: flex-start;
+		border-top: 1px solid #eee;
+		justify-content: space-between;
+	}
 
-.two {
-	border-left: 1px solid #eee;
-	border-right: 1px solid #eee;
-}
-**/
+	.one,
+	.two,
+	.three {
+		border-top: none;
+		flex-basis: 30%;/*affects width because flex-direction is row*/
+	}
+
+	.two {
+		border-left: 1px solid #eee;
+		border-right: 1px solid #eee;
+		padding: 0 20px;
+	}
+		
+	}
+
+
+
+@media all and (min-width:1200px) {
+	/* Desktop styles here */
+	.container {
+		width: 100%;
+	}
+	header {
+		justify-content: space-between;
+	}
+
+	header h1 {
+			width: 30%;
+			padding: 38px 0;
+			border-bottom: none;
+			text-align: left;
+	}
+
+	header nav {
+			width: 40%;
+			padding: 46px 0;
+	}
+
+	header nav ul {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  header nav ul li {
+	  padding: 0 10px;
+  }
